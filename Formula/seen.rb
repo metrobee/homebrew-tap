@@ -1,12 +1,13 @@
 class Seen < Formula
   desc "PlutoFF: Professionaalne CLI tööriist seenevaatluste edastamiseks PlutoF / eElurikkuse andmebaasi"
   homepage "https://github.com/metrobee/plutoff"
-  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "b6947521632801bf398f5741b7829b78354666365efedacfca6495cd32a3e3d5"
+  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "ae63b398eb3da020d4eed7d5eb3ba78d9de9282fc6b1000e6b3cbfb83e60514d"
   license "MIT"
 
   def install
-    libexec.install "seen.py", "google_photos_sync.py", "requirements.txt", ".env.example"
+    libexec.install "seen.py", "requirements.txt", ".env.example" if File.exist?(".env.example")
+    libexec.install "google_photos_sync.py" if File.exist?("google_photos_sync.py")
 
     (bin/"seen").write <<~EOS
       #!/usr/bin/env bash
