@@ -1,8 +1,8 @@
 class Seen < Formula
   desc "PlutoFF: Professionaalne CLI tööriist seenevaatluste edastamiseks PlutoF / eElurikkuse andmebaasi"
   homepage "https://github.com/metrobee/plutoff"
-  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.3.3.tar.gz"
-  sha256 "f2cc98c9ca25dee58cdbde47328c997ea160f802ea203f052d1974fa5bcc497f"
+  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.3.4.tar.gz"
+  sha256 "64a308bdc56308512f95e6135fd7f62173ce1b9fcc61c0e01d095b7daa795f04"
   license "MIT"
 
   def install
