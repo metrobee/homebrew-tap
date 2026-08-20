@@ -22,6 +22,7 @@ class Seen < Formula
     chmod 0755, bin/"plutoff"
 
     if File.directory?("completions")
+      zsh_completion.install "completions/_seen" => "_seen" if File.exist?("completions/_seen")
       zsh_completion.install "completions/seen.zsh" => "_seen" if File.exist?("completions/seen.zsh")
       bash_completion.install "completions/seen.bash" => "seen" if File.exist?("completions/seen.bash")
     end
