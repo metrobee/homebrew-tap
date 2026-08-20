@@ -9,6 +9,11 @@ cask "clipsnippet" do
 
   app "ClipSnippet.app"
 
+  postflight do
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/ClipSnippet.app"]
+  end
+
   zap trash: [
     "~/.clipsnippet_history.json",
     "~/.clipsnippet_snippets.json",
