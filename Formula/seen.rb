@@ -1,8 +1,8 @@
 class Seen < Formula
   desc "Tormiliselt kiire PlutoF seenevaatluste sisestamise CLI tööriist"
   homepage "https://github.com/metrobee/plutoff"
-  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.6.3.tar.gz"
-  sha256 "fce5fe300fed49f7ab965074f42e17cdcb3ca65acea63652f8dd42e46e822123"
+  url "https://github.com/metrobee/plutoff/archive/refs/tags/v1.6.4.tar.gz"
+  sha256 "372045838799dcee51e9e054d69dbe2f5444b6249da10f9d02dad541fcd89913"
   license "MIT"
 
   depends_on "python@3.11"
