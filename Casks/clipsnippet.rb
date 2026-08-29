@@ -1,6 +1,6 @@
 cask "clipsnippet" do
-  version "1.4.0"
-  sha256 "95d6e50688f2a78802effd6000736e6613046701134ad5eb55bac95ac87264cc"
+  version "1.5.0"
+  sha256 "e2da7b57d8a46952795609436f18af3a4b6d2e7cd64fe161a4388d31cec4f413"
 
   url "https://github.com/metrobee/clipsnippet/releases/download/v#{version}/ClipSnippet.zip"
   name "ClipSnippet"
