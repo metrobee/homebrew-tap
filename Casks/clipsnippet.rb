@@ -8,11 +8,11 @@ cask "clipsnippet" do
   homepage "https://github.com/metrobee/clipsnippet"
 
   # Requires macOS 12 Monterey or later (LSMinimumSystemVersion in Info.plist)
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "ClipSnippet.app"
 
-  postflight do
+  postflight_steps do
     system_command "xattr",
                    args: ["-cr", "#{appdir}/ClipSnippet.app"]
   end
