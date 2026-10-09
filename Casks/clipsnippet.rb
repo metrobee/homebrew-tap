@@ -12,7 +12,7 @@ cask "clipsnippet" do
 
   app "ClipSnippet.app"
 
-  postflight_steps do
+  postflight do
     system_command "xattr",
                    args: ["-cr", "#{appdir}/ClipSnippet.app"]
   end
